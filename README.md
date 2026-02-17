@@ -98,7 +98,7 @@ Unityエディタ上で「Spatializer Settings Updated」ダイアログが表�
 ---
 
 ## 3. VPAI 設定内容
-[jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage](jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage)
+[jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage](jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage)  
 検証パッケージに含まれる `com.anatawa12.vpm-package-auto-installer/config.json` の内容は以下の通り。
 
 ```json
