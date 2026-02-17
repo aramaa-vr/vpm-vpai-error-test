@@ -58,7 +58,10 @@ VPAI（VPM Package Auto Installer）を使用してパッケージを展開し�
 VPAIによるパッケージ展開（および依存関係の解決）の過程で、以下のダイアログが発生することを確認した。
 
 > **Spatializer Settings Updated**
-> *VRChat SDK detected incorrect Audio Spatializer settings and corrected them. For the changes to fully apply - you need to restart your editor.*
+> *VRChat SDK detected incorrect Audio Spatializer
+>  settings and corrected them.
+> For the changes to fully apply - you need to restart
+> your editor.*
 
 ---
 
