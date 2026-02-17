@@ -138,7 +138,8 @@ VPAIによるパッケージ展開（および依存関係の解決）の過程�
 > For the changes to fully apply - you need to restart  
 > your editor.*
 
-エラーから復旧までの流れ
+#### エラーから復旧までの流れ
+
 「Import」  
 ![Spatializer Settings Updated](0.png)  
 「Install」  
