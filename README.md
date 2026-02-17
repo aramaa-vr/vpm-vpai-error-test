@@ -131,24 +131,26 @@ VPAIによるパッケージ展開（および依存関係の解決）の過程�
 > For the changes to fully apply - you need to restart  
 > your editor.*
 
+エラーから復旧までの流れ
+「Import」  
 ![Spatializer Settings Updated](0.png)  
+「Install」  
 ![Spatializer Settings Updated](1.png)  
+「ok」  
 ![Spatializer Settings Updated](2.png)  
+「Save and Restart」  
 ![Spatializer Settings Updated](3.png)  
+「Enter Safe Mode」  
 ![Spatializer Settings Updated](4.png)  
+「Exit Safe Mode」  
 ![Spatializer Settings Updated](5.png)  
+「Exit Anyway」  
 ![Spatializer Settings Updated](6.png)  
+「OK」  
 ![Spatializer Settings Updated](7.png)  
 
-
-
-その後の復旧
-> 「save and Restart」を選択  
-> Unityが再起動される  
-> セーフティモードで起動  
-> Exitボタンを押す  
-> OKボタンを押してエラー修正が自動で入る  
-> リポジトリの参照がリストに出なくなりますが、プロジェクトは通常道理に動作している様子でした。  
+リポジトリの参照がリストに出なくなる。
+ただ、プロジェクト自体は通常道理に動作している様子でした。  
 
 ---
 
