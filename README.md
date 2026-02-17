@@ -129,6 +129,14 @@ VPAIによるパッケージ展開（および依存関係の解決）の過程�
 > For the changes to fully apply - you need to restart  
 > your editor.*  
 
+その後の復旧
+「save and Restart」を選択
+Unityが再起動される
+セーフティモードで起動
+Exitボタンを押す
+OKボタンを押してエラー修正が自動で入る
+リポジトリの参照がリストに出なくなりますが、プロジェクトは通常道理に動作している様子でした。
+
 ---
 
 ## 5. 結論と考察
