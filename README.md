@@ -23,8 +23,73 @@ VPAI（VPM Package Auto Installer）を使用してパッケージを展開し�
 (作成時のVRChat SDKバージョンは、最新のものに更新させるために3.10.1を指定しています。)
 
 * **VPM Repository:** [vpm-vpai-error-test.json](https://github.com/aramaa-vr/vpm-repos/blob/master/develop/vpm-vpai-error-test.json)
+```json
+{
+	"name": "aramaa.vpm-vpai-error-test",
+	"id": "io.github.aramaa.vpm-vpai-error-test",
+	"author": "aramaa",
+	"url": "https://aramaa-vr.github.io/vpm-repos/develop/vpm-vpai-error-test.json",
+	"packages": {
+		"jp.aramaa.vpm-vpai-error-test": {
+			"versions": {
+				"1.0.0": {
+					"name": "jp.aramaa.vpm-vpai-error-test",
+					"version": "1.0.0",
+					"url": "https://github.com/aramaa-vr/vpm-vpai-error-test/releases/download/1.0.0/jp.aramaa.vpm-vpai-error-test-1.0.0.zip?",
+					"displayName": "vpm-vpai-error-test",
+					"description": "vpm-vpai-error-test",
+					"unity": "2022.3",
+					"unityRelease": "22f1",
+					"documentationUrl": "",
+					"changelogUrl": "",
+					"licensesUrl": "",
+					"license": "Custom",
+					"author": {
+						"name": "aramaa"
+					},
+					"vpmRepositories": [
+						"https://vpm.nadena.dev/vpm.json"
+					],
+					"vpmDependencies": {
+						"nadena.dev.modular-avatar": ">=1.16.2",
+						"com.vrchat.avatars": ">=3.10.1"
+					},
+					"type": "avatar"
+				}
+			}
+		}
+	}
+}
+```
+
 * **Package ZIP:** [jp.aramaa.vpm-vpai-error-test-1.0.0.zip](https://github.com/aramaa-vr/vpm-vpai-error-test/releases/download/1.0.0/jp.aramaa.vpm-vpai-error-test-1.0.0.zip)
 * **Package JSON:** [package.json (Raw)](https://raw.githubusercontent.com/aramaa-vr/vpm-vpai-error-test/refs/heads/master/package.json)
+```json
+{
+    "name": "jp.aramaa.vpm-vpai-error-test",
+    "version": "1.0.0",
+    "url": "https://github.com/aramaa-vr/vpm-vpai-error-test/releases/download/1.0.0/jp.aramaa.vpm-vpai-error-test-1.0.0.zip?",
+    "displayName": "vpm-vpai-error-test",
+    "description": "vpm-vpai-error-test",
+    "unity": "2022.3",
+    "unityRelease": "22f1",
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "license": "Custom",
+    "author": {
+        "name": "aramaa"
+    },
+    "vpmRepositories": [
+        "https://vpm.nadena.dev/vpm.json"
+    ],
+    "vpmDependencies": {
+        "nadena.dev.modular-avatar": ">=1.16.2",
+        "com.vrchat.avatars": ">=3.10.1"
+    },
+    "type": "avatar"
+}
+```
 
 ---
 
