@@ -1,0 +1,24 @@
+{
+    "name": "jp.aramaa.vpm-vpai-error-test",
+    "version": "1.0.0",
+    "url": "https://github.com/aramaa-vr/vpm-vpai-error-test/releases/download/1.0.0/jp.aramaa.vpm-vpai-error-test-1.0.0.zip?",
+    "displayName": "vpm-vpai-error-test",
+    "description": "vpm-vpai-error-test",
+    "unity": "2022.3",
+    "unityRelease": "22f1",
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "license": "Custom",
+    "author": {
+        "name": "aramaa"
+    },
+    "vpmRepositories": [
+        "https://vpm.nadena.dev/vpm.json"
+    ],
+    "vpmDependencies": {
+        "nadena.dev.modular-avatar": ">=1.16.2",
+        "com.vrchat.avatars": ">=3.10.1"
+    },
+    "type": "avatar"
+}
