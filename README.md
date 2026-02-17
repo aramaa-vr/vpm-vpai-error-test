@@ -20,6 +20,7 @@ VPAI（VPM Package Auto Installer）を使用してパッケージを展開し�
 
 ### サーバー側設定 (Remote Config)
 検証用に以下のリポジトリおよびパッケージを構成した。
+(作成時のVRChat SDKバージョンは、最新のものに更新させるために3.10.1を指定しています。)
 
 * **VPM Repository:** [vpm-vpai-error-test.json](https://github.com/aramaa-vr/vpm-repos/blob/master/develop/vpm-vpai-error-test.json)
 * **Package ZIP:** [jp.aramaa.vpm-vpai-error-test-1.0.0.zip](https://github.com/aramaa-vr/vpm-vpai-error-test/releases/download/1.0.0/jp.aramaa.vpm-vpai-error-test-1.0.0.zip)
