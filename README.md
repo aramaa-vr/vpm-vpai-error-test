@@ -1,5 +1,7 @@
 # VPAI導入時における「Spatializer Settings Updated」ダイアログの発生検証報告書
 
+![Spatializer Settings Updated](3.png)
+
 ## 1. 検証の概要
 VPAI（VPM Package Auto Installer）を使用してパッケージを展開した際、Unityエディタ上で「Spatializer Settings Updated」ダイアログが表示される挙動について、最小構成の環境を作成し、再現性と発生条件を検証した。
 
