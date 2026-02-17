@@ -125,16 +125,22 @@ VPAI（VPM Package Auto Installer）を使用してパッケージを展開し�
 
 VPAIによるパッケージ展開（および依存関係の解決）の過程で、以下のダイアログが発生することを確認した。
 
-![Spatializer Settings Updated](0.png)  
-![Spatializer Settings Updated](1.png)  
-![Spatializer Settings Updated](2.png)  
-![Spatializer Settings Updated](3.png)  
-
 > **Spatializer Settings Updated**  
 > *VRChat SDK detected incorrect Audio Spatializer  
 >  settings and corrected them.  
 > For the changes to fully apply - you need to restart  
-> your editor.*  
+> your editor.*
+
+![Spatializer Settings Updated](0.png)  
+![Spatializer Settings Updated](1.png)  
+![Spatializer Settings Updated](2.png)  
+![Spatializer Settings Updated](3.png)  
+![Spatializer Settings Updated](4.png)  
+![Spatializer Settings Updated](5.png)  
+![Spatializer Settings Updated](6.png)  
+![Spatializer Settings Updated](7.png)  
+
+
 
 その後の復旧
 > 「save and Restart」を選択  
