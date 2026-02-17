@@ -63,7 +63,7 @@ VPAI（VPM Package Auto Installer）を使用してパッケージを展開し�
 ```
 
 * **Package ZIP:** [jp.aramaa.vpm-vpai-error-test-1.0.0.zip](https://github.com/aramaa-vr/vpm-vpai-error-test/releases/download/1.0.0/jp.aramaa.vpm-vpai-error-test-1.0.0.zip)
-* **Package JSON:** [package.json (Raw)](https://raw.githubusercontent.com/aramaa-vr/vpm-vpai-error-test/refs/heads/master/package.json)
+* **Package ZIPに入っている package.json:** [package.json (Raw)](https://raw.githubusercontent.com/aramaa-vr/vpm-vpai-error-test/refs/heads/master/package.json)
 ```json
 {
     "name": "jp.aramaa.vpm-vpai-error-test",
