@@ -44,7 +44,7 @@
 2. `RestartLater`をクリック  
 ![Save and Restart](assets/images/flow-04-reset-later.avif)
 
-3. **Unity を閉じる（保存して終了）**  
+3. **Unity を閉じる**  
 4. VCCで対象プロジェクトの`Manage Project` を開く
 5. Resolveをクリック
 
