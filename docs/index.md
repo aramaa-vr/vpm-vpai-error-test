@@ -17,23 +17,20 @@
 ## 1) VRChat SDK を最新にする
 
 必ず VCC 側で VRChat SDK を最新に更新してください。
-
-![SDK 更新前の例](assets/images/sdk-version-before-update-exp.avif)
-
 1. VCCで対象プロジェクトの`Manage Project`をクリック
 3. `VRChat SDK - Avatars` を最新に更新
 4. `VRChat SDK - Base` を最新に更新
 5. 対象プロジェクトの`Open Project`をクリック
 
+![SDK 更新前の例](assets/images/sdk-version-before-update-exp.avif)
 
 ## 2) プロジェクトにパッケージを導入する
 
-`jp.aramaa.何か-x.x.x-installer.unitypackage` をダブルクリック  
-`Import`をクリック  
+1. `jp.aramaa.何か-x.x.x-installer.unitypackage` をダブルクリック  
+1. 1回目に表示されるダイアログで`Import`をクリック  
+1. 2回目に表示されるダイアログで`Install`をクリック 
 
 ![Import ダイアログの例](assets/images/flow-01-import.avif)
-
-その後に表示されるダイアログで`Install`をクリック 
 
 ### もしも `VRChat SDK - Avatars` が表示された場合の対応  
 **Cancel**して`1)`の対応をしてください
@@ -42,26 +39,21 @@
 
 ## 3) VRChat SDK を最新に更新し忘れてエラーが出た場合の復旧方法
 
-以下の手順で復旧してください。
-
-`Spatializer Settings Updated`が出た場合
-
-- RestartLaterをクリック
+`Spatializer Settings Updated`が出た場合は以下の手順で復旧してください。
 
 ![Save and Restart](assets/images/flow-04-reset-later.avif)
 
-**Unity を閉じる（保存して終了）**
-
-VCC で対象プロジェクトの`Manage Project` を開く
-
-- Resolveをクリック
+2. `RestartLater`をクリック  
+3. **Unity を閉じる（保存して終了）**  
+4. VCCで対象プロジェクトの`Manage Project` を開く
+5. Resolveをクリック
 
 ![Save and Restart](assets/images/flow-08-manage-packages.avif)
 
-3. `VRChat SDK - Avatars` を最新に更新
-4. `VRChat SDK - Base` を最新に更新
-5. 必要なら VPAI を再導入
-6. Unity を再起動して Console エラー消失を確認
+2. `VRChat SDK - Avatars` を最新に更新  
+4. `VRChat SDK - Base` を最新に更新  
+5. 必要なら VPAI を再導入  
+6. Unity を再起動して Console エラー消失を確認  
 
 ### 復旧しない場合の追加対応
 
