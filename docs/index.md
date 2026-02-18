@@ -4,6 +4,10 @@
 >
 > **最重要ポイント**: **unitypackage の導入前に、VRChat SDK（Avatars / Base）を先に最新化**してください。
 
+> **重要な注意**: 「VCC 推奨」と記載された商品において、`unitypackage` での導入は**非推奨**です。可能な限り VCC 経由の導入を優先してください。
+>
+> **免責**: 本手順は既知ケースの回避・復旧を目的としたものであり、すべての環境での解決を保証するものではありません。
+
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Compatible-brightgreen)](#) [![Unity](https://img.shields.io/badge/Unity-Setup%20Guide-000000)](#) [![VRChat SDK](https://img.shields.io/badge/VRChat%20SDK-Required-4b8bbe)](#)
 
 ---
@@ -141,5 +145,6 @@ A. 片方のみ更新すると依存関係がずれ、導入時に不整合が�
 
 ## 補足
 
-- 本手順は「VCC 推奨」と明記された商品向けです。
+- 本手順は「VCC 推奨」と明記された商品向けですが、`unitypackage` での導入自体は非推奨です。
+- 本手順は解決を保証するものではなく、環境差分により追加対応が必要になる場合があります。
 - 本ドキュメントは GitHub Pages（標準 Markdown / HTML レンダリング）で崩れにくい記法を使用しています。
