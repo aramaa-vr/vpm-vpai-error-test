@@ -1,6 +1,6 @@
 # VPAI導入時における「Spatializer Settings Updated」ダイアログの発生検証報告書
 
-![Save and Restart step](assets/images/flow-04-save-and-restart.avif)
+![Save and Restart step](docs/assets/images/flow-04-save-and-restart.avif)
 
 ## 1. 検証の概要
 VPAI（VPM Package Auto Installer）を使用してパッケージを展開した際に特定の条件下でSpatializer Settings Updatedが出るか検証した。
@@ -67,7 +67,7 @@ Unityエディタ上で「Spatializer Settings Updated」ダイアログが表�
 ```
 
 * **Package ZIP:** [jp.aramaa.vpm-vpai-error-test-1.0.0.zip](https://github.com/aramaa-vr/vpm-vpai-error-test/releases/download/1.0.0/jp.aramaa.vpm-vpai-error-test-1.0.0.zip)
-* **Package ZIPに入っている package.json:** [package.json (Raw)](https://raw.githubusercontent.com/aramaa-vr/vpm-vpai-error-test/refs/heads/master/packages/vpm/package.json)
+* **Package ZIPに入っている package.json:** [package.json (Raw)](https://raw.githubusercontent.com/aramaa-vr/vpm-vpai-error-test/refs/heads/master/docs/packages/vpm/package.json)
 ```json
 {
     "name": "jp.aramaa.vpm-vpai-error-test",
@@ -98,7 +98,7 @@ Unityエディタ上で「Spatializer Settings Updated」ダイアログが表�
 ---
 
 ## 3. VPAI 設定内容
-[jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage](packages/installers/jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage)  
+[jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage](docs/packages/installers/jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage)  
 検証パッケージに含まれる `com.anatawa12.vpm-package-auto-installer/config.json` の内容は以下の通り。
 
 ```json
@@ -124,7 +124,7 @@ Unityエディタ上で「Spatializer Settings Updated」ダイアログが表�
 2. あえて旧バージョンの VRChat SDK (3.10.0) を事前にインストールし、バージョン更新が走る余地を作る。
 3. 作成した VPAI パッケージをプロジェクトにインポートし、展開を開始。
 
-![SDK version before update](assets/images/sdk-version-before-update.avif)  
+![SDK version before update](docs/assets/images/sdk-version-before-update.avif)  
 
 ### 検証結果
 
@@ -141,21 +141,21 @@ VPAIによるパッケージ展開（および依存関係の解決）の過程�
 #### エラーから復旧までの流れ
 
 「Import」  
-![Import step](assets/images/flow-01-import.avif)  
+![Import step](docs/assets/images/flow-01-import.avif)  
 「Install」  
-![Install step](assets/images/flow-02-install.avif)  
+![Install step](docs/assets/images/flow-02-install.avif)  
 「ok」  
-![Dialog OK step](assets/images/flow-03-dialog-ok.avif)  
+![Dialog OK step](docs/assets/images/flow-03-dialog-ok.avif)  
 「Save and Restart」  
-![Save and Restart step](assets/images/flow-04-save-and-restart.avif)  
+![Save and Restart step](docs/assets/images/flow-04-save-and-restart.avif)  
 「Enter Safe Mode」  
-![Enter Safe Mode step](assets/images/flow-05-enter-safe-mode.avif)  
+![Enter Safe Mode step](docs/assets/images/flow-05-enter-safe-mode.avif)  
 「Exit Safe Mode」  
-![Exit Safe Mode step](assets/images/flow-06-exit-safe-mode.avif)  
+![Exit Safe Mode step](docs/assets/images/flow-06-exit-safe-mode.avif)  
 「Exit Anyway」  
-![Exit Anyway step](assets/images/flow-07-exit-anyway.avif)  
+![Exit Anyway step](docs/assets/images/flow-07-exit-anyway.avif)  
 「OK」  
-![Final OK step](assets/images/flow-08-final-ok.avif)  
+![Final OK step](docs/assets/images/flow-08-final-ok.avif)  
 
 リポジトリの参照がリストに出なくなる。
 ただ、プロジェクト自体は通常道理に動作している様子でした。
