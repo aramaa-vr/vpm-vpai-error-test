@@ -2,15 +2,6 @@
 
 ![Save and Restart step](assets/images/flow-04-save-and-restart.png)
 
-## リポジトリ構成（整理後）
-本リポジトリでは、`README.md` はルートに維持しつつ、用途別に以下へ分離しています。
-
-- `assets/images/`: 検証手順で使う画像
-- `packages/installers/`: 配布用の `.unitypackage`
-- `packages/vpm/package.json`: VPMメタデータ
-
----
-
 ## 1. 検証の概要
 VPAI（VPM Package Auto Installer）を使用してパッケージを展開した際に特定の条件下でSpatializer Settings Updatedが出るか検証した。
 vpmDependenciesにcom.vrchat.avatarsを追加または依存パッケージ内でcom.vrchat.avatarsを追加する設定をした場合、  
