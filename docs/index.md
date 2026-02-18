@@ -71,6 +71,7 @@
 3. 2回目のダイアログで `Install` をクリック
 
 ![Import ダイアログの例1](assets/images/flow-01-import.avif)
+
 ![Import ダイアログの例2](assets/images/flow-02-install-true.png)
 
 ### 分岐: `VRChat SDK - Avatars` が表示された場合
