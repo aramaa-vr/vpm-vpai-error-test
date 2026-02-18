@@ -1,14 +1,10 @@
-# あらまあ素敵なショップ配布 VPM パッケージ導入時の注意点
+# あらまあ素敵なショップ配布 Unitypackage 導入時の注意点
 
-> 対象: `jp.aramaa.何か-x.x.x-installer.unitypackage` を使って導入する場合  
-> 例: `jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage`
-
-このページは、**Booth の zip から最初に開く導入注意ページ**として使う想定です。  
-先に結論だけ確認したい方は、以下の 3 点だけ守ってください。
+> 対象: `jp.aramaa.何か-x.x.x-installer.unitypackage` のような名前のパッケージを入れる場合の注意
 
 ## 先に結論（重要3点）
 
-1. **VPAI 実行前に、VRChat SDK を最新化する**
+1. **Unitypackage 実行前に、VRChat SDK を最新化する**
 2. インポート中のダイアログに **VRChat SDK が見えたらキャンセル**する
 3. 誤って入れた場合は、**VCC で SDK を再インストールして復旧**する
 
@@ -18,13 +14,13 @@
 
 VPAI 導入前に、必ず VCC 側で VRChat SDK を最新化してください。
 
-![SDK 更新前の例](assets/images/sdk-version-before-update.avif)
+![SDK 更新前の例](assets/images/sdk-version-before-update-exp.avif)
 
-- VCC（VRChat Creator Companion）で対象プロジェクトを開く
-- `Manage Project` で VRChat SDK を更新
-- 更新完了後に `jp.aramaa.何か-x.x.x-installer.unitypackage` をインポート
-
-> SDK 先行更新により、依存関係のズレや導入時トラブルを避けやすくなります。
+1. VCCで対象プロジェクトの`Manage Project`をクリック
+2. `VRChat SDK - Avatars` を最新に更新
+3. `VRChat SDK - Base` を最新に更新
+4. 対象プロジェクトを`Open Project`をクリック
+5. `jp.aramaa.何か-x.x.x-installer.unitypackage` をダブルクリック
 
 ## 2) ダイアログに VRChat SDK が出たらキャンセル
 
