@@ -20,6 +20,7 @@
 - [2. unitypackage を導入する](#2-unitypackage-を導入する)
 - [3. エラーが出たときの復旧手順](#3-エラーが出たときの復旧手順)
 - [復旧しない場合の追加対応（優先度順）](#復旧しない場合の追加対応優先度順)
+- [4. アップデートできるようにする](#3-アップデートできるようにする)
 - [FAQ（よくある質問）](#faqよくある質問)
 - [最終チェックリスト](#最終チェックリスト)
 
@@ -106,6 +107,19 @@
 | 高 | VCC で SDK を一度 `Remove` して再インストール | 依存関係を初期化しやすい |
 | 中 | `Library` フォルダを削除して Unity 再起動 | 再インポートに時間がかかる |
 | 中 | `Packages/manifest.json` の依存関係を確認 | バージョン衝突の切り分け |
+
+---
+
+## 4. アップデートできるようにする
+
+- 一度VCCを終了した後、起動してください。
+- `Settings → Packages → Installed Repositories` で、**aramaa にチェックがある**ことを確認
+
+![VCCのInstalled Repositoriesでaramaaチェックを確認する画面]({{ "/assets/images/vrcc_repo_opt_q82.webp" | relative_url }})
+
+- `Projects -> 導入したいプロジェクト -> Manage Project -> Selected Repos -> Multiple Repositories -> aramaa` をチェック
+
+![Unityでインポートが完了した画面]({{ "/assets/images/install-unitypackage-done.webp" | relative_url }})
 
 ---
 
