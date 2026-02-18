@@ -33,17 +33,17 @@
 ![Import ダイアログの例](assets/images/flow-01-import.avif)
 
 ### もしも `VRChat SDK - Avatars` が表示された場合の対応  
+
 **Cancel**して`1)`の対応をしてください
 
 ![Import ダイアログの例](assets/images/flow-02-install-exp.avif)
 
 ## 3) VRChat SDK を最新に更新し忘れてエラーが出た場合の復旧方法
 
-`Spatializer Settings Updated`が出た場合は以下の手順で復旧してください。
-
+2. `Spatializer Settings Updated`が出た場合は以下の手順で復旧してください。
+2. `RestartLater`をクリック  
 ![Save and Restart](assets/images/flow-04-reset-later.avif)
 
-2. `RestartLater`をクリック  
 3. **Unity を閉じる（保存して終了）**  
 4. VCCで対象プロジェクトの`Manage Project` を開く
 5. Resolveをクリック
