@@ -18,7 +18,8 @@
 - [最短フロー（3ステップ）](#最短フロー3ステップ)
 - [1. VRChat SDK を最新にする（必須）](#1-vrchat-sdk-を最新にする必須)
 - [2. unitypackage を導入する](#2-unitypackage-を導入する)
-- [3. エラーが出たときの復旧手順](#3-エラーが出たときの復旧手順)
+- [3. アップデートできるようにする](#3-アップデートできるようにする)
+- [4. エラーが出たときの復旧手順](#4-エラーが出たときの復旧手順)
 - [復旧しない場合の追加対応（優先度順）](#復旧しない場合の追加対応優先度順)
 - [FAQ（よくある質問）](#faqよくある質問)
 - [最終チェックリスト](#最終チェックリスト)
@@ -69,7 +70,8 @@
 2. 1回目のダイアログで `Import` をクリック
 3. 2回目のダイアログで `Install` をクリック
 
-![Import ダイアログの例](assets/images/flow-01-import.avif)
+![Import ダイアログの例1](assets/images/flow-01-import.avif)
+![Import ダイアログの例2](assets/images/flow-02-install-true.png)
 
 ### 分岐: `VRChat SDK - Avatars` が表示された場合
 
@@ -80,7 +82,20 @@
 
 ---
 
-## 3. エラーが出たときの復旧手順
+## 3. アップデートできるようにする
+
+- 一度VCCを終了した後、起動してください。
+- `Settings → Packages → Installed Repositories` で、**aramaa にチェックがある**ことを確認
+
+![VCCのInstalled Repositoriesでaramaaチェックを確認する画面]({{ "/assets/images/vrcc_repo_opt_q82.webp" | relative_url }})
+
+- `Projects -> 導入したいプロジェクト -> Manage Project -> Selected Repos -> Multiple Repositories -> aramaa` をチェック
+
+![Unityでインポートが完了した画面]({{ "/assets/images/install-unitypackage-done.webp" | relative_url }})
+
+---
+
+## 4. エラーが出たときの復旧手順
 
 `Spatializer Settings Updated` が表示された場合は、以下を順番に実施してください。
 
