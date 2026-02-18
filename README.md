@@ -1,6 +1,15 @@
 # VPAI導入時における「Spatializer Settings Updated」ダイアログの発生検証報告書
 
-![Spatializer Settings Updated](3.png)
+![Save and Restart step](assets/images/flow-04-save-and-restart.png)
+
+## リポジトリ構成（整理後）
+本リポジトリでは、`README.md` はルートに維持しつつ、用途別に以下へ分離しています。
+
+- `assets/images/`: 検証手順で使う画像
+- `packages/installers/`: 配布用の `.unitypackage`
+- `packages/vpm/package.json`: VPMメタデータ
+
+---
 
 ## 1. 検証の概要
 VPAI（VPM Package Auto Installer）を使用してパッケージを展開した際に特定の条件下でSpatializer Settings Updatedが出るか検証した。
@@ -67,7 +76,7 @@ Unityエディタ上で「Spatializer Settings Updated」ダイアログが表�
 ```
 
 * **Package ZIP:** [jp.aramaa.vpm-vpai-error-test-1.0.0.zip](https://github.com/aramaa-vr/vpm-vpai-error-test/releases/download/1.0.0/jp.aramaa.vpm-vpai-error-test-1.0.0.zip)
-* **Package ZIPに入っている package.json:** [package.json (Raw)](https://raw.githubusercontent.com/aramaa-vr/vpm-vpai-error-test/refs/heads/master/package.json)
+* **Package ZIPに入っている package.json:** [package.json (Raw)](https://raw.githubusercontent.com/aramaa-vr/vpm-vpai-error-test/refs/heads/master/packages/vpm/package.json)
 ```json
 {
     "name": "jp.aramaa.vpm-vpai-error-test",
@@ -98,7 +107,7 @@ Unityエディタ上で「Spatializer Settings Updated」ダイアログが表�
 ---
 
 ## 3. VPAI 設定内容
-[jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage](jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage)  
+[jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage](packages/installers/jp.aramaa.vpm-vpai-error-test-1.x.x-installer.unitypackage)  
 検証パッケージに含まれる `com.anatawa12.vpm-package-auto-installer/config.json` の内容は以下の通り。
 
 ```json
@@ -124,7 +133,7 @@ Unityエディタ上で「Spatializer Settings Updated」ダイアログが表�
 2. あえて旧バージョンの VRChat SDK (3.10.0) を事前にインストールし、バージョン更新が走る余地を作る。
 3. 作成した VPAI パッケージをプロジェクトにインポートし、展開を開始。
 
-![Spatializer Settings Updated](ver.png)  
+![SDK version before update](assets/images/sdk-version-before-update.png)  
 
 ### 検証結果
 
@@ -141,21 +150,21 @@ VPAIによるパッケージ展開（および依存関係の解決）の過程�
 #### エラーから復旧までの流れ
 
 「Import」  
-![Spatializer Settings Updated](0.png)  
+![Import step](assets/images/flow-01-import.png)  
 「Install」  
-![Spatializer Settings Updated](1.png)  
+![Install step](assets/images/flow-02-install.png)  
 「ok」  
-![Spatializer Settings Updated](2.png)  
+![Dialog OK step](assets/images/flow-03-dialog-ok.png)  
 「Save and Restart」  
-![Spatializer Settings Updated](3.png)  
+![Save and Restart step](assets/images/flow-04-save-and-restart.png)  
 「Enter Safe Mode」  
-![Spatializer Settings Updated](4.png)  
+![Enter Safe Mode step](assets/images/flow-05-enter-safe-mode.png)  
 「Exit Safe Mode」  
-![Spatializer Settings Updated](5.png)  
+![Exit Safe Mode step](assets/images/flow-06-exit-safe-mode.png)  
 「Exit Anyway」  
-![Spatializer Settings Updated](6.png)  
+![Exit Anyway step](assets/images/flow-07-exit-anyway.png)  
 「OK」  
-![Spatializer Settings Updated](7.png)  
+![Final OK step](assets/images/flow-08-final-ok.png)  
 
 リポジトリの参照がリストに出なくなる。
 ただ、プロジェクト自体は通常道理に動作している様子でした。
