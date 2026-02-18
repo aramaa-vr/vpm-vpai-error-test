@@ -5,7 +5,8 @@
 
 ## 概要
 
-商品によっては他社が作成したものを使用することがあるため、意図しない不具合を回避するための手順を説明します。 
+商品によっては他社が作成したものを使用しています。  
+そのため、稀に意図しない不具合が発生するのを回避するための手順を説明します。   
 
 1. VRChat SDK を最新にする
 2. プロジェクトにパッケージを導入する
@@ -15,7 +16,7 @@
 
 ## 1) VRChat SDK を最新にする
 
-VPAI 導入前に、必ず VCC 側で VRChat SDK を最新に更新してください。
+必ず VCC 側で VRChat SDK を最新に更新してください。
 
 ![SDK 更新前の例](assets/images/sdk-version-before-update-exp.avif)
 
@@ -27,12 +28,15 @@ VPAI 導入前に、必ず VCC 側で VRChat SDK を最新に更新してくだ�
 
 ## 2) プロジェクトにパッケージを導入する
 
-`jp.aramaa.何か-x.x.x-installer.unitypackage` をダブルクリック
+`jp.aramaa.何か-x.x.x-installer.unitypackage` をダブルクリック  
+`Import`をクリック  
 
 ![Import ダイアログの例](assets/images/flow-01-import.avif)
 
-`Install`を押してください。  
-もしも VRChat SDK 関連項目が表示された場合は、**Cancel**してVRChat SDK を最新にしてください。
+その後に表示されるダイアログで`Install`をクリック 
+
+### もしも `VRChat SDK - Avatars` が表示された場合の対応  
+**Cancel**して`1)`の対応をしてください
 
 ![Import ダイアログの例](assets/images/flow-02-install-exp.avif)
 
