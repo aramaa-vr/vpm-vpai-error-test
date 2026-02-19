@@ -50,8 +50,8 @@
 2. `Settings → Packages → Installed Repositories` で `aramaa` にチェック
 3. `Projects → (対象プロジェクト) → Manage Project → Selected Repos → Multiple Repositories → aramaa` にチェック
 
-![VCCのInstalled Repositoriesでaramaaチェックを確認する画面](assets/images/vrcc_repo_opt_q82.webp)
-![Unityでインポートが完了した画面](assets/images/install-unitypackage-done.webp)
+<img src="assets/images/vrcc_repo_opt_q82.webp" alt="VCCのInstalled Repositoriesでaramaaチェックを確認する画面" width="720">
+<img src="assets/images/install-unitypackage-done.webp" alt="Unityでインポートが完了した画面" width="720">
 
 ---
 
@@ -67,7 +67,7 @@
 8. 必要に応じて unitypackage を再導入
 
 ![Save and Restart](assets/images/flow-04-reset-later.avif)
-![Manage Packages](assets/images/flow-08-manage-packages.avif)
+<img src="assets/images/flow-08-manage-packages.avif" alt="Manage Packages" width="720">
 
 ---
 
