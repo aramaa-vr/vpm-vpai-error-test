@@ -81,15 +81,6 @@
 
 ---
 
-## 最終チェック
-
-- [ ] `VRChat SDK - Avatars` が最新
-- [ ] `VRChat SDK - Base` が最新
-- [ ] unitypackage の `Import` / `Install` が完了
-- [ ] Unity Console のエラーが解消
-
----
-
 ## 注意
 
 - 「VCC 推奨」商品は、可能なら VCC 導入を優先してください
