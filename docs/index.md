@@ -56,8 +56,8 @@
 2. `Settings → Packages → Installed Repositories` で `aramaa` にチェック
 3. `Projects → (対象プロジェクト) → Manage Project → Selected Repos → Multiple Repositories → aramaa` にチェック
 
-![VCCのInstalled Repositoriesでaramaaチェックを確認する画面]({{ "/assets/images/vrcc_repo_opt_q82.webp" | relative_url }})
-![Unityでインポートが完了した画面]({{ "/assets/images/install-unitypackage-done.webp" | relative_url }})
+![VCCのInstalled Repositoriesでaramaaチェックを確認する画面](assets/images/vrcc_repo_opt_q82.webp)
+![Unityでインポートが完了した画面](assets/images/install-unitypackage-done.webp)
 
 ---
 
