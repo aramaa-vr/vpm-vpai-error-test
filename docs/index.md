@@ -1,10 +1,8 @@
-# unitypackage 導入ガイド（最短版）
+# unitypackage 導入ガイド
 
 > 対象: `jp.aramaa.何か-x.x.x-installer.unitypackage` を導入する方
->
-> **このページは「手順だけ」を短くまとめています。上から順に実施してください。**
 
-## まず結論（ここだけ読めば開始できる）
+## クイックスタート（最短で始めたい方はこちら）
 
 1. **先に SDK 更新**（`VRChat SDK - Avatars` / `Base`）
 2. その後に **unitypackage を Import → Install**
@@ -24,10 +22,6 @@
 4. `Open Project` で Unity を開く
 
 ![SDK 更新前の例](assets/images/sdk-version-before-update-exp.avif)
-
-**完了条件**
-- `Avatars` が最新
-- `Base` が最新
 
 ---
 
@@ -69,8 +63,8 @@
 4. `Resolve` をクリック
 5. `VRChat SDK - Avatars` を最新化
 6. `VRChat SDK - Base` を最新化
-7. 必要に応じて VPAI を再導入
-8. Unity を再起動し、Console エラー消失を確認
+7. Unity を再起動し、Console エラー消失を確認
+8. 必要に応じて unitypackage を再導入
 
 ![Save and Restart](assets/images/flow-04-reset-later.avif)
 ![Manage Packages](assets/images/flow-08-manage-packages.avif)
@@ -82,15 +76,6 @@
 1. SDK を一度 `Remove` して再インストール
 2. `Library` フォルダを削除して Unity 再起動
 3. `Packages/manifest.json` の依存関係を確認
-
----
-
-## 最終チェック
-
-- [ ] `VRChat SDK - Avatars` が最新
-- [ ] `VRChat SDK - Base` が最新
-- [ ] unitypackage の `Import` / `Install` が完了
-- [ ] Unity Console のエラーが解消
 
 ---
 
