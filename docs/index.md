@@ -65,8 +65,8 @@
 4. `Resolve` をクリック
 5. `VRChat SDK - Avatars` を最新化
 6. `VRChat SDK - Base` を最新化
-7. 必要に応じて VPAI を再導入
-8. Unity を再起動し、Console エラー消失を確認
+7. Unity を再起動し、Console エラー消失を確認
+8. 必要に応じて unitypackage を再導入
 
 ![Save and Restart](assets/images/flow-04-reset-later.avif)
 ![Manage Packages](assets/images/flow-08-manage-packages.avif)
