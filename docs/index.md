@@ -1,27 +1,27 @@
-# unitypackage 導入クイックガイド（エラー回避版）
+# unitypackage 導入ガイド（最短版）
 
-> 対象: `jp.aramaa.何か-x.x.x-installer.unitypackage` を導入する人
+> 対象: `jp.aramaa.何か-x.x.x-installer.unitypackage` を導入する方
 >
-> **最重要:** `unitypackage` を入れる前に、必ず `VRChat SDK - Avatars` と `VRChat SDK - Base` を最新化する。
+> **このページは「手順だけ」を短くまとめています。上から順に実施してください。**
+
+## まず結論（ここだけ読めば開始できる）
+
+1. **先に SDK 更新**（`VRChat SDK - Avatars` / `Base`）
+2. その後に **unitypackage を Import → Install**
+3. 最後に **VCC で `aramaa` リポジトリを有効化**
+
+`VRChat SDK - Avatars` の警告が出たら、いったん `Cancel` して **1 に戻る**。
 
 ---
 
-## まずやること（30秒確認）
+## 手順
 
-- 「VCC 推奨」商品なら、可能なら **VCC 導入を優先**
-- 今回は unitypackage で進める
-- 先に SDK を更新してから Import する
-
----
-
-## 手順（この順で実施）
-
-### 1) VRChat SDK を更新する（必須）
+### 1. VRChat SDK を更新（必須）
 
 1. VCC で対象プロジェクトの `Manage Project` を開く
-2. `VRChat SDK - Avatars` を更新
-3. `VRChat SDK - Base` を更新
-4. `Open Project` で開く
+2. `VRChat SDK - Avatars` を最新化
+3. `VRChat SDK - Base` を最新化
+4. `Open Project` で Unity を開く
 
 ![SDK 更新前の例](assets/images/sdk-version-before-update-exp.avif)
 
@@ -31,7 +31,7 @@
 
 ---
 
-### 2) unitypackage を導入する
+### 2. unitypackage を導入
 
 1. `jp.aramaa.何か-x.x.x-installer.unitypackage` をダブルクリック
 2. 1つ目のダイアログで `Import`
@@ -40,15 +40,17 @@
 ![Import ダイアログの例1](assets/images/flow-01-import.avif)
 ![Import ダイアログの例2](assets/images/flow-02-install-true.png)
 
-**もし `VRChat SDK - Avatars` が表示されたら**
+#### 分岐（重要）
+
+`VRChat SDK - Avatars` が表示された場合:
 - `Cancel` を押す
-- 手順1（SDK 更新）を先に完了してからやり直す
+- 手順 1（SDK 更新）を完了してから再実行
 
 ![Install ダイアログの例](assets/images/flow-02-install-exp.avif)
 
 ---
 
-### 3) VCC でアップデート可能な状態にする
+### 3. VCC でアップデート可能化
 
 1. VCC を再起動
 2. `Settings → Packages → Installed Repositories` で `aramaa` にチェック
@@ -59,27 +61,25 @@
 
 ---
 
-## エラーが出たとき（`Spatializer Settings Updated`）
-
-以下を **上から順に** 実施してください。
+## エラー時のみ実施（`Spatializer Settings Updated`）
 
 1. `RestartLater` をクリック
 2. Unity を閉じる（保存して終了）
 3. VCC で対象プロジェクトの `Manage Project` を開く
 4. `Resolve` をクリック
-5. `VRChat SDK - Avatars` を更新
-6. `VRChat SDK - Base` を更新
-7. 必要なら VPAI を再導入
-8. Unity 再起動後、Console エラーが消えたか確認
+5. `VRChat SDK - Avatars` を最新化
+6. `VRChat SDK - Base` を最新化
+7. 必要に応じて VPAI を再導入
+8. Unity を再起動し、Console エラー消失を確認
 
 ![Save and Restart](assets/images/flow-04-reset-later.avif)
 ![Manage Packages](assets/images/flow-08-manage-packages.avif)
 
 ---
 
-## まだ直らない場合（追加対応）
+## まだ直らない場合
 
-1. VCC で SDK を一度 `Remove` して再インストール
+1. SDK を一度 `Remove` して再インストール
 2. `Library` フォルダを削除して Unity 再起動
 3. `Packages/manifest.json` の依存関係を確認
 
@@ -96,5 +96,5 @@
 
 ## 注意
 
-- 「VCC 推奨」商品での unitypackage 導入は非推奨
+- 「VCC 推奨」商品は、可能なら VCC 導入を優先してください
 - 本手順は既知ケース向けで、すべての環境での解決を保証するものではありません
