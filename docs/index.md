@@ -1,156 +1,91 @@
-# あらまあ素敵なショップ unitypackage 導入ガイド
+# unitypackage 導入ガイド（最短版）
 
-> **対象**: `jp.aramaa.何か-x.x.x-installer.unitypackage` を導入する方
+> 対象: `jp.aramaa.何か-x.x.x-installer.unitypackage` を導入する方
 >
-> **最重要ポイント**: **unitypackage の導入前に、VRChat SDK（Avatars / Base）を先に最新化**してください。
+> **このページは「手順だけ」を短くまとめています。上から順に実施してください。**
 
-> **重要な注意**: 「VCC 推奨」と記載された商品において、`unitypackage` での導入は**非推奨**です。可能な限り VCC 経由の導入を優先してください。
->
-> **免責**: 本手順は既知ケースの回避・復旧を目的としたものであり、すべての環境での解決を保証するものではありません。
+## まず結論（ここだけ読めば開始できる）
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Compatible-brightgreen)](#) [![Unity](https://img.shields.io/badge/Unity-Setup%20Guide-000000)](#) [![VRChat SDK](https://img.shields.io/badge/VRChat%20SDK-Required-4b8bbe)](#)
+1. **先に SDK 更新**（`VRChat SDK - Avatars` / `Base`）
+2. その後に **unitypackage を Import → Install**
+3. 最後に **VCC で `aramaa` リポジトリを有効化**
 
----
-
-## 目次
-
-- [このガイドでできること](#このガイドでできること)
-- [最短フロー（3ステップ）](#最短フロー3ステップ)
-- [1. VRChat SDK を最新にする（必須）](#1-vrchat-sdk-を最新にする必須)
-- [2. unitypackage を導入する](#2-unitypackage-を導入する)
-- [3. アップデートできるようにする](#3-アップデートできるようにする)
-- [4. エラーが出たときの復旧手順](#4-エラーが出たときの復旧手順)
-- [復旧しない場合の追加対応（優先度順）](#復旧しない場合の追加対応優先度順)
-- [FAQ（よくある質問）](#faqよくある質問)
-- [最終チェックリスト](#最終チェックリスト)
+`VRChat SDK - Avatars` の警告が出たら、いったん `Cancel` して **1 に戻る**。
 
 ---
 
-## このガイドでできること
+## 手順
 
-- 導入前にやるべき SDK 更新の順序を確認できる
-- unitypackage 導入時の分岐（`VRChat SDK - Avatars` 表示時）に対応できる
-- `Spatializer Settings Updated` 発生時の復旧を完了できる
+### 1. VRChat SDK を更新（必須）
 
----
-
-## 最短フロー（3ステップ）
-
-| Step | 作業 | 目安時間 | 完了条件 |
-|---|---|---:|---|
-| 1 | VRChat SDK を最新化 | 2〜5分 | `Avatars` / `Base` が最新 |
-| 2 | unitypackage を導入 | 1〜3分 | `Import` / `Install` が完了 |
-| 3 | エラー時の復旧 | 5〜15分 | Console エラーが解消 |
-
----
-
-## 1. VRChat SDK を最新にする（必須）
-
-> [!IMPORTANT]
-> **このステップを先に実施しないと、導入時の不整合やコンパイルエラーの原因になります。**
-
-1. VCC で対象プロジェクトの `Manage Project` をクリック
-2. `VRChat SDK - Avatars` を最新に更新
-3. `VRChat SDK - Base` を最新に更新
-4. 対象プロジェクトの `Open Project` をクリック
+1. VCC で対象プロジェクトの `Manage Project` を開く
+2. `VRChat SDK - Avatars` を最新化
+3. `VRChat SDK - Base` を最新化
+4. `Open Project` で Unity を開く
 
 ![SDK 更新前の例](assets/images/sdk-version-before-update-exp.avif)
 
-### チェックポイント
-
-- `VRChat SDK - Avatars` が最新
-- `VRChat SDK - Base` が最新
-- 更新後のプロジェクトを開いている
+**完了条件**
+- `Avatars` が最新
+- `Base` が最新
 
 ---
 
-## 2. unitypackage を導入する
+### 2. unitypackage を導入
 
 1. `jp.aramaa.何か-x.x.x-installer.unitypackage` をダブルクリック
-2. 1回目のダイアログで `Import` をクリック
-3. 2回目のダイアログで `Install` をクリック
+2. 1つ目のダイアログで `Import`
+3. 2つ目のダイアログで `Install`
 
 ![Import ダイアログの例1](assets/images/flow-01-import.avif)
-
 ![Import ダイアログの例2](assets/images/flow-02-install-true.png)
 
-### 分岐: `VRChat SDK - Avatars` が表示された場合
+#### 分岐（重要）
 
-> [!WARNING]
-> `Cancel` をクリックし、**先に「1. VRChat SDK を最新にする（必須）」**を実施してください。
+`VRChat SDK - Avatars` が表示された場合:
+- `Cancel` を押す
+- 手順 1（SDK 更新）を完了してから再実行
 
 ![Install ダイアログの例](assets/images/flow-02-install-exp.avif)
 
 ---
 
-## 3. アップデートできるようにする
+### 3. VCC でアップデート可能化
 
-- 一度VCCを終了した後、起動してください。
-- `Settings → Packages → Installed Repositories` で、**aramaa にチェックがある**ことを確認
+1. VCC を再起動
+2. `Settings → Packages → Installed Repositories` で `aramaa` にチェック
+3. `Projects → (対象プロジェクト) → Manage Project → Selected Repos → Multiple Repositories → aramaa` にチェック
 
-![VCCのInstalled Repositoriesでaramaaチェックを確認する画面]({{ "/assets/images/vrcc_repo_opt_q82.webp" | relative_url }})
-
-- `Projects -> 導入したいプロジェクト -> Manage Project -> Selected Repos -> Multiple Repositories -> aramaa` をチェック
-
-![Unityでインポートが完了した画面]({{ "/assets/images/install-unitypackage-done.webp" | relative_url }})
+![VCCのInstalled Repositoriesでaramaaチェックを確認する画面](assets/images/vrcc_repo_opt_q82.webp)
+![Unityでインポートが完了した画面](assets/images/install-unitypackage-done.webp)
 
 ---
 
-## 4. エラーが出たときの復旧手順
-
-`Spatializer Settings Updated` が表示された場合は、以下を順番に実施してください。
+## エラー時のみ実施（`Spatializer Settings Updated`）
 
 1. `RestartLater` をクリック
-2. **Unity を閉じる（保存して終了）**
+2. Unity を閉じる（保存して終了）
 3. VCC で対象プロジェクトの `Manage Project` を開く
 4. `Resolve` をクリック
-5. `VRChat SDK - Avatars` を最新に更新
-6. `VRChat SDK - Base` を最新に更新
+5. `VRChat SDK - Avatars` を最新化
+6. `VRChat SDK - Base` を最新化
 7. 必要に応じて VPAI を再導入
 8. Unity を再起動し、Console エラー消失を確認
 
 ![Save and Restart](assets/images/flow-04-reset-later.avif)
-
 ![Manage Packages](assets/images/flow-08-manage-packages.avif)
 
 ---
 
-## 復旧しない場合の追加対応（優先度順）
+## まだ直らない場合
 
-| 優先度 | 対応 | 補足 |
-|---|---|---|
-| 高 | VCC で SDK を一度 `Remove` して再インストール | 依存関係を初期化しやすい |
-| 中 | `Library` フォルダを削除して Unity 再起動 | 再インポートに時間がかかる |
-| 中 | `Packages/manifest.json` の依存関係を確認 | バージョン衝突の切り分け |
+1. SDK を一度 `Remove` して再インストール
+2. `Library` フォルダを削除して Unity 再起動
+3. `Packages/manifest.json` の依存関係を確認
 
 ---
 
-## FAQ（よくある質問）
-
-<details>
-<summary><strong>Q. 先に unitypackage を入れてしまいました。やり直しは必要ですか？</strong></summary>
-
-A. Console エラーがない場合はそのまま進められることがあります。エラーがある場合は「3. エラーが出たときの復旧手順」を実施してください。
-
-</details>
-
-<details>
-<summary><strong>Q. `Resolve` してもエラーが消えません。</strong></summary>
-
-A. 「復旧しない場合の追加対応（優先度順）」を上から順に試してください。特に SDK の再インストールで解決するケースが多いです。
-
-</details>
-
-<details>
-<summary><strong>Q. なぜ Avatars と Base の両方を更新する必要がありますか？</strong></summary>
-
-A. 片方のみ更新すると依存関係がずれ、導入時に不整合が起きる可能性があるためです。
-
-</details>
-
----
-
-## 最終チェックリスト
+## 最終チェック
 
 - [ ] `VRChat SDK - Avatars` が最新
 - [ ] `VRChat SDK - Base` が最新
@@ -159,8 +94,7 @@ A. 片方のみ更新すると依存関係がずれ、導入時に不整合が�
 
 ---
 
-## 補足
+## 注意
 
-- 本手順は「VCC 推奨」と明記された商品向けですが、`unitypackage` での導入自体は非推奨です。
-- 本手順は解決を保証するものではなく、環境差分により追加対応が必要になる場合があります。
-- 本ドキュメントは GitHub Pages（標準 Markdown / HTML レンダリング）で崩れにくい記法を使用しています。
+- 「VCC 推奨」商品は、可能なら VCC 導入を優先してください
+- 本手順は既知ケース向けで、すべての環境での解決を保証するものではありません
