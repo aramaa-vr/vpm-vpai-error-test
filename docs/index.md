@@ -2,7 +2,7 @@
 
 > 対象: `jp.aramaa.何か-x.x.x-installer.unitypackage` を導入する方
 
-## クイックスタート（最短で始めたい方はこちら）
+## 概要
 
 1. **先に SDK 更新**（`VRChat SDK - Avatars` / `Base`）
 2. その後に **unitypackage を Import → Install**
