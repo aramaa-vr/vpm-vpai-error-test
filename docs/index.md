@@ -83,3 +83,12 @@
 
 - 「VCC 推奨」商品は、可能なら VCC 導入を優先してください
 - 本手順は既知ケース向けで、すべての環境での解決を保証するものではありません
+
+---
+
+## クレジット
+unitypackageを作成するのに使用しました。
+### VPMPackageAutoInstaller
+- 作者: anatawa12
+- ライセンス: MIT
+- URL: https://github.com/anatawa12/VPMPackageAutoInstaller
